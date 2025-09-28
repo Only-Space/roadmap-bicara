@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Produk BICARA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for the timeline */
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #374151; /* gray-700 */
+            border-radius: 2px;
+        }
+        @media (max-width: 767px) {
+            .timeline-container::before {
+                left: 20px;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <div class="container mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-cyan-400">Roadmap Produk BICARA</h1>
+            <p class="text-lg text-gray-400 mt-4 max-w-3xl mx-auto">Dari prototipe Hackathon hingga menjadi platform komunikasi yang matang dalam satu tahun.</p>
+        </header>
+
+        <!-- Bagian Jangka Pendek -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-semibold text-center mb-12 text-gray-100">A. Pengembangan Jangka Pendek: Fokus Hackathon</h2>
+            <div class="relative timeline-container">
+                
+                <!-- Tahap 1 -->
+                <div class="mb-8 flex justify-between items-center w-full md:flex-row-reverse left-timeline">
+                    <div class="order-1 md:w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-cyan-500 shadow-xl w-10 h-10 rounded-full">
+                        <h3 class="mx-auto font-semibold text-lg text-white">1</h3>
+                    </div>
+                    <div class="order-1 bg-gray-800 border border-gray-700 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
+                        <h4 class="font-bold text-lg mb-2 text-cyan-300">Tahap 1: Fondasi & Penyiapan</h4>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300">
+                            Membangun kerangka kerja teknis dan desain. Finalisasi UI/UX, pengembangan awal aplikasi Android, integrasi kamera, pengumpulan dataset (A-Z & 15-20 kata), dan memulai pelatihan model AI.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tahap 2 -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 md:w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-cyan-500 shadow-xl w-10 h-10 rounded-full">
+                        <h3 class="mx-auto text-white font-semibold text-lg">2</h3>
+                    </div>
+                    <div class="order-1 bg-gray-800 border border-gray-700 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
+                        <h4 class="font-bold text-lg mb-2 text-cyan-300">Tahap 2: Integrasi Inti</h4>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300">
+                           Mengonversi model AI ke format TFLite dan mengintegrasikannya ke aplikasi. Mengimplementasikan UI fungsional dan membangun logika penghubung antara input kamera dan model AI.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Tahap 3 -->
+                <div class="mb-8 flex justify-between items-center w-full md:flex-row-reverse left-timeline">
+                    <div class="order-1 md:w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-cyan-500 shadow-xl w-10 h-10 rounded-full">
+                        <h3 class="mx-auto font-semibold text-lg text-white">3</h3>
+                    </div>
+                    <div class="order-1 bg-gray-800 border border-gray-700 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
+                        <h4 class="font-bold text-lg mb-2 text-cyan-300">Tahap 3: Finalisasi & Demo</h4>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300">
+                            Integrasi penuh semua komponen. Pengujian end-to-end pada perangkat fisik untuk optimasi. Menghasilkan prototipe demo yang mampu menerjemahkan abjad dan kata dasar secara real-time.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Bagian Jangka Panjang -->
+        <section>
+            <h2 class="text-3xl font-semibold text-center mb-12 text-gray-100">B. Pengembangan Jangka Panjang: Visi 1 Tahun</h2>
+            <div class="relative timeline-container">
+
+                <!-- Kuartal 1 -->
+                <div class="mb-8 flex justify-between items-center w-full md:flex-row-reverse left-timeline">
+                    <div class="order-1 md:w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-teal-500 shadow-xl w-10 h-10 rounded-full">
+                        <h3 class="mx-auto font-semibold text-sm text-white">Q1</h3>
+                    </div>
+                    <div class="order-1 bg-gray-800 border border-gray-700 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
+                        <h4 class="font-bold text-lg mb-2 text-teal-300">Kuartal 1: Fondasi & Validasi Lanjutan</h4>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300">
+                           Transformasi prototipe menjadi versi Alpha. Perluasan kosakata model AI (100-150 kata), membangun backend yang kokoh, dan merilis versi Alpha untuk pengujian internal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kuartal 2 -->
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 md:w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-teal-500 shadow-xl w-10 h-10 rounded-full">
+                         <h3 class="mx-auto font-semibold text-sm text-white">Q2</h3>
+                    </div>
+                    <div class="order-1 bg-gray-800 border border-gray-700 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
+                        <h4 class="font-bold text-lg mb-2 text-teal-300">Kuartal 2: Fitur Inti & Keterlibatan Pengguna</h4>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300">
+                           Peningkatan kosakata AI (>300 kata), pengembangan "Akademi Isyarat", "Kalibrasi Personalisasi", dan memulai "Mode Percakapan Dua Arah". Rilis versi Beta Tertutup.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kuartal 3 -->
+                <div class="mb-8 flex justify-between items-center w-full md:flex-row-reverse left-timeline">
+                    <div class="order-1 md:w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-teal-500 shadow-xl w-10 h-10 rounded-full">
+                         <h3 class="mx-auto font-semibold text-sm text-white">Q3</h3>
+                    </div>
+                    <div class="order-1 bg-gray-800 border border-gray-700 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
+                        <h4 class="font-bold text-lg mb-2 text-teal-300">Kuartal 3: Optimalisasi & Monetisasi</h4>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300">
+                           Stabilisasi dan optimasi performa. Finalisasi "Mode Percakapan Dua Arah". Integrasi sistem pembayaran untuk skema langganan. Rilis versi Beta Terbuka ke publik.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kuartal 4 -->
+                 <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 md:w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-teal-500 shadow-xl w-10 h-10 rounded-full">
+                         <h3 class="mx-auto font-semibold text-sm text-white">Q4</h3>
+                    </div>
+                    <div class="order-1 bg-gray-800 border border-gray-700 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4">
+                        <h4 class="font-bold text-lg mb-2 text-teal-300">Kuartal 4: Peluncuran Publik & Momentum Awal</h4>
+                        <p class="text-sm leading-snug tracking-wide text-gray-300">
+                           Peluncuran resmi BICARA versi 1.0. Didukung kampanye pemasaran digital, menerapkan *Continuous Learning* untuk AI, dan memantau metrik untuk iterasi cepat pasca-peluncuran.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Small script to fix mobile timeline alignment
+        function alignMobileTimeline() {
+            if (window.innerWidth < 768) {
+                const timelineItems = document.querySelectorAll('.left-timeline, .right-timeline');
+                timelineItems.forEach(item => {
+                    const content = item.querySelector('.order-1.bg-gray-800');
+                    if(content) {
+                       content.style.transform = 'translateX(50px)';
+                    }
+                    const circle = item.querySelector('.z-20');
+                    if(circle) {
+                       circle.style.transform = 'translateX(-10px)';
+                    }
+                });
+            } else {
+                 const timelineItems = document.querySelectorAll('.left-timeline, .right-timeline');
+                timelineItems.forEach(item => {
+                    const content = item.querySelector('.order-1.bg-gray-800');
+                     if(content) {
+                       content.style.transform = 'translateX(0)';
+                    }
+                     const circle = item.querySelector('.z-20');
+                    if(circle) {
+                       circle.style.transform = 'translateX(0)';
+                    }
+                });
+            }
+        }
+        window.addEventListener('load', alignMobileTimeline);
+        window.addEventListener('resize', alignMobileTimeline);
+    </script>
+</body>
+</html>
